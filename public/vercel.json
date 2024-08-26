@@ -33,11 +33,11 @@
     "routes": [
       {
         "src": "/api/ebooks",
-        "dest": "../server.js"
+        "dest": "../../server.js"
       },
       {
         "src": "/api/ebooks/(.*)",
-        "dest": "../server.js"
+        "dest": "../../server.js"
       },
       {
         "src": "/",
