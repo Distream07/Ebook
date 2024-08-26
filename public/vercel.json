@@ -2,35 +2,47 @@
     "version": 2,
     "builds": [
       {
-        "src": "server.js",
+        "src": "../server.js",
         "use": "@vercel/node"
       },
       {
-        "src": "public/index.html",
+        "src": "index.html",
         "use": "@vercel/static"
       },
       {
-        "src": "public/css/**/*",
+        "src": "css/styles.css",
         "use": "@vercel/static"
       },
       {
-        "src": "public/js/**/*",
+        "src": "js/script.js",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "js/*",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "css/*",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "image/*",
         "use": "@vercel/static"
       }
     ],
     "routes": [
-      {
-        "src": "/api/ebooks",
-        "dest": "/server.js"
-      },
-      {
-        "src": "/api/ebooks/(.*)",
-        "dest": "/server.js"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/public/$1"
-      }
-    ]
+    {
+      "src": "/api/ebooks",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/api/ebooks/(.*)",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/public/$1"
+    }
+  ]
   }
   
