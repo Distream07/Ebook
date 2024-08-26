@@ -1,0 +1,108 @@
+/* Général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Arrière-plan sombre */
+    color: #e0e0e0; /* Texte clair */
+}
+
+/* En-tête */
+header {
+    background-color: #1f1f1f; /* Fond sombre pour l'en-tête */
+    color: #e0e0e0; /* Texte clair */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+/* Conteneur des chapitres */
+#chapterContainer {
+    margin: 20px auto;
+    width: 89%;
+    max-width: 1200px; /* Largeur maximale */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Section de présentation */
+#presentationSection {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Centrer l'image horizontalement */
+}
+
+#presentationImage {
+    max-width: 100%; /* Limiter la largeur de l'image à 80% du conteneur */
+    height: auto;
+    max-height: 60vh; /* Limiter la hauteur maximale de l'image */
+    border-radius: 8px; /* Coins arrondis pour l'image */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6); /* Ombre marquée */
+}
+
+/* Conteneur des boutons */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Espacement entre les boutons */
+}
+
+/* Boutons */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #e0e0e0; /* Texte clair */
+    background-color: #3a3a3a; /* Fond sombre pour les boutons */
+    border: none;
+    border-radius: 8px; /* Coins arrondis */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a4a4a; /* Couleur plus claire au survol */
+    transform: scale(1.05); /* Agrandir légèrement au survol */
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Description */
+#Description {
+    margin-top: 40px; /* Espace au-dessus de la description */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#DescriptionText {
+    max-width: 80%; /* Limiter la largeur de la description */
+    background-color: #1f1f1f; /* Fond sombre pour la description */
+    color: #e0e0e0; /* Texte clair */
+    padding: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Ombre marquée */
+    font-size: 18px; /* Taille de police confortable */
+    line-height: 1.6; /* Espacement des lignes */
+    transition: transform 0.3s ease; /* Animation de transformation */
+    text-align: center;
+}
+
+/* Ajouter une légère transformation au survol */
+#DescriptionText:hover {
+    transform: scale(1.02); /* Agrandir légèrement la description au survol */
+}
+
+/* Responsivité pour petits écrans */
+@media (max-width: 768px) {
+    #DescriptionText {
+        font-size: 16px; /* Taille de police réduite pour les petits écrans */
+        max-width: 95%; /* Augmenter la largeur sur mobile */
+    }
+}

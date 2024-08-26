@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails de l'eBook</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/ebook.css"> <!-- Assurez-vous que ce fichier CSS est bien lié -->
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="image/logo.png" alt="Logo" />
+                <h1>UniversFR</h1>
+            </div>
+            <h2 class="page-title">Detail de l'ebook</h2>
+            <div class="social-icons">
+                <a href="https://tiktok.com" target="_blank" aria-label="Tiktok">
+                    <img src="../image/TikTok-Logo.png" alt="Tiktok">
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="image/logo-twitter.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="image/logo-insta.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+</header>
+    <main>
+        <div class="view-buttons">
+            <button id="slideshowButton">Vue Diaporama</button>
+            <button id="listButton">Vue Liste</button>
+        </div>
+
+        <!-- Boutons pour changer de chapitre -->
+        <div class="chapter-buttons">
+            <button id="prevChapterButton" class="prev">Chapitre Précédent</button>
+            <button id="nextChapterButton" class="next">Chapitre Suivant</button>
+        </div>
+
+        <div class="gallery" id="gallery">
+            <button class="nav-button left" id="prevButton" onclick="prevImage()">&#10094;</button>
+            <button class="nav-button right" id="nextButton" onclick="nextImage()">&#10095;</button>
+            <div class="image-container">
+                <img id="ebookImage" src="" alt="eBook Image">
+            </div>
+        </div>
+        <div class="list-view" id="listView">
+            <!-- Images en mode liste -->
+        </div>
+    </main>
+    <script src="/js/ebook.js"></script>
+</body>
+</html>

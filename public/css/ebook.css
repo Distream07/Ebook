@@ -1,0 +1,211 @@
+/* Général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Arrière-plan sombre */
+    color: #e0e0e0; /* Texte clair */
+}
+
+/* En-tête */
+header {
+    background-color: #1f1f1f; /* Fond sombre pour l'en-tête */
+    color: #e0e0e0; /* Texte clair */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Boutons de vue */
+.view-buttons {
+    text-align: center;
+    margin: 20px;
+}
+
+.view-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    background-color: #3a3a3a; /* Fond sombre pour les boutons */
+    color: #e0e0e0; /* Texte clair */
+    border: none;
+    border-radius: 8px; /* Coins arrondis */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+.view-buttons button:hover {
+    background-color: #4a4a4a; /* Couleur plus claire au survol */
+    transform: scale(1.05); /* Agrandir légèrement au survol */
+}
+
+/* Boutons de chapitre */
+.chapter-buttons {
+    text-align: center;
+    margin: 20px;
+}
+
+.chapter-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    background-color: #3a3a3a; /* Fond sombre pour les boutons */
+    color: #e0e0e0; /* Texte clair */
+    border: none;
+    border-radius: 8px; /* Coins arrondis */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.chapter-buttons button:hover {
+    background-color: #4a4a4a; /* Couleur plus claire au survol */
+    transform: scale(1.05); /* Agrandir légèrement au survol */
+}
+
+/* Galerie */
+.gallery {
+    position: relative;
+    max-width: 90%;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.image-container {
+    width: 100%;
+    height: 80vh; /* Ajusté à 80% de la hauteur de la fenêtre pour laisser un peu d'espace autour */
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Centre verticalement l'image */
+    justify-content: center; /* Centre horizontalement l'image */
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Conserve les proportions de l'image sans la couper */
+    border-radius: 8px; /* Coins arrondis pour l'image */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6); /* Ombre marquée */
+}
+
+/* Boutons de navigation */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.6); /* Opacité initiale */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    z-index: 100;
+    transform: translateY(-50%);
+    border-radius: 50%; /* Boutons circulaires */
+    opacity: 0.5; /* Opacité initiale */
+    transition: opacity 0.3s ease; /* Transition pour passer à l'opacité pleine sur hover ou clic */
+    animation: fadeOut 2s ease 2s forwards; /* Délai de 2s avant de commencer l'animation pour réduire l'opacité */
+}
+
+/* Animer vers l'opacité 0.1 après 2 secondes */
+@keyframes fadeOut {
+    to {
+        opacity: 0.2; /* Réduire l'opacité à 0.1 après 2 secondes */
+    }
+}
+
+.nav-button.left {
+    left: 10px;
+}
+
+.nav-button.right {
+    right: 10px;
+}
+
+.nav-button.disabled {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: not-allowed;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Vue liste */
+.list-view {
+    display: none;
+    margin: 20px auto; /* Centrer le conteneur */
+    max-width: 90%; /* Largeur maximale */
+    width: 100%; /* Largeur totale avec marge */
+    padding: 0 10px; /* Ajouter une marge intérieure */
+    box-sizing: border-box; /* Inclure les marges et les bordures dans la largeur totale */
+}
+
+.list-view img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 10px auto; /* Centrer les images et ajouter une marge en bas */
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px; /* Coins arrondis pour les images en liste */
+}
+/* Boutons de chapitre */
+.chapter-buttons {
+    text-align: center;
+    margin: 20px;
+}
+
+.chapter-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    background-color: #3a3a3a; /* Fond sombre pour les boutons */
+    color: #e0e0e0; /* Texte clair */
+    border: none;
+    border-radius: 8px; /* Coins arrondis */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.chapter-buttons button:hover {
+    background-color: #4a4a4a; /* Couleur plus claire au survol */
+    transform: scale(1.05); /* Agrandir légèrement au survol */
+}
+
+.chapter-buttons button:disabled {
+    background-color: #2a2a2a; /* Couleur plus sombre pour les boutons désactivés */
+    color: #7a7a7a; /* Texte plus clair pour les boutons désactivés */
+    cursor: not-allowed;
+}
+
+.chapter-buttons button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    background: url('/images/arrow-icon.svg') no-repeat center;
+    background-size: 16px 16px;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+}
+
+.chapter-buttons button.prev::before {
+    background: url('/images/arrow-left-icon.svg') no-repeat center;
+}
+
+.chapter-buttons button.next::before {
+    background: url('/images/arrow-right-icon.svg') no-repeat center;
+}
+
+/* Ajout de style pour les icônes des boutons */
+.chapter-buttons button.prev:hover::before {
+    opacity: 1;
+}
+
+.chapter-buttons button.next:hover::before {
+    opacity: 1;
+}

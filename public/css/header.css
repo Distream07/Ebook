@@ -1,0 +1,88 @@
+/* En-tête */
+header {
+    background-color: #1f1f1f; /* Fond sombre pour l'en-tête */
+    color: #e0e0e0; /* Texte clair */
+    width: 100%;
+    padding: 20px;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/* Contenu de l'en-tête */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Largeur maximale du contenu */
+    margin: 0 auto;
+}
+
+/* Logo et titre */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacement entre l'image et le texte */
+}
+
+.logo-img {
+    width: 60px; /* Largeur du logo */
+    height: 60px; /* Hauteur du logo */
+    border-radius: 50%; /* Rendre l'image ronde */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Titre de la page */
+.page-title {
+    font-size: 24px;
+    margin-left: -110px;
+}
+
+/* Icônes de réseaux sociaux */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 40px; /* Largeur des icônes */
+    height: 40px; /* Hauteur des icônes */
+    border-radius: 50%; /* Rendre les icônes rondes */
+    object-fit: cover; /* Conserver les proportions tout en remplissant le cercle */
+}
+
+.social-icon:hover {
+    filter: brightness(1.2); /* Effet de survol pour les icônes */
+}
+@media (max-width: 700px) {
+    .page-title{
+        margin-left: 80px;
+    }
+    .logo h1{
+        display: none;
+        visibility: hidden;
+    }
+}
+@media (max-width: 500px) {
+    .social-icons{
+        display: none;
+        visibility: hidden;
+    }
+    .page-title{
+        margin: auto;
+        margin-left: auto;
+    }
+    .logo h1{
+        display: none;
+        visibility: hidden;
+    }
+}

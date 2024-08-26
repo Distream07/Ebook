@@ -1,0 +1,159 @@
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121212; /* Arrière-plan sombre */
+    color: #e0e0e0; /* Texte clair */
+}
+
+
+
+/* Conteneur de recherche */
+#searchContainer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Champ de recherche */
+#searchInput {
+    padding: 10px;
+    border: 1px solid #333; /* Bordure sombre */
+    border-radius: 4px;
+    width: 250px; /* Largeur ajustée pour une meilleure apparence */
+    font-size: 16px;
+    background-color: #1f1f1f; /* Fond sombre */
+    color: #e0e0e0; /* Texte clair */
+}
+
+/* Bouton de recherche */
+#searchButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3a3a3a; /* Bouton sombre */
+    color: #e0e0e0; /* Texte clair */
+    cursor: pointer; /* Curseur de main pour les boutons cliquables */
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#searchButton:hover {
+    background-color: #4a4a4a; /* Couleur plus claire au survol */
+    transform: scale(1.05); /* Agrandir légèrement au survol */
+}
+
+
+
+/* Éléments de la galerie */
+.gallery-item {
+    flex: 1 1 200px; /* Permet aux items de grandir (flex-grow: 1), rétrécir (flex-shrink: 1), et occuper un minimum de 200px */
+    max-width: 200px; /* Largeur maximale pour chaque item */
+    box-sizing: border-box; /* Inclure le padding et les bordures dans la largeur */
+    margin-bottom: 20px;
+    background-color: #1e1e1e; /* Couleur de fond sombre */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6); /* Ombre marquée */
+    overflow: hidden;
+    text-align: center; /* Centrer le texte */
+    cursor: pointer; /* Curseur de main */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.8);
+}
+
+/* Image et titre dans les éléments de la galerie */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Supprimer les marges autour de l'image */
+}
+
+.gallery-item h2 {
+    margin: 10px;
+    font-size: 18px;
+    color: #e0e0e0; /* Texte clair */
+}
+
+/* Liste des eBooks */
+.ebook-list {
+    margin: 20px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.ebook-item {
+    margin: 10px 0;
+    cursor: pointer; /* Curseur de main pour les éléments cliquables */
+}
+
+.ebook-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6); /* Ombre plus marquée */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ebook-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.8); /* Ombre plus marquée au survol */
+}
+/* Section des galeries */
+.gallery-section {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.gallery-section h2{
+    text-align: center;
+}
+
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Styles pour les items de galerie */
+.gallery-item {
+    flex: 1 1 150px;
+    max-width: 160px;
+    margin-bottom: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item h2 {
+    margin: 10px;
+    font-size: 18px;
+    color: #e0e0e0;
+}

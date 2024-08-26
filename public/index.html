@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue Hentai</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="image/logo.png" alt="Logo" />
+                <h1>UniversHentaiFR</h1>
+            </div>
+            <h2 class="page-title">Catalogue Hentai</h2>
+            <div class="social-icons">
+                <a href="https://tiktok.com" target="_blank" aria-label="Tiktok">
+                    <img src="../image/TikTok-Logo.png" alt="Tiktok">
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="image/logo-twitter.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="image/logo-insta.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Barre de recherche -->
+    <div id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Rechercher une galerie...">
+        <button id="searchButton">Rechercher</button>
+    </div>
+
+    <main>
+        <!-- Section des 4 dernières galeries -->
+        <div id="latestGalleryList" class="gallery-section">
+            <h2>Les Nouveautés</h2>
+            <div id="latestGalleryItems" class="gallery-list"></div>
+        </div>
+    
+        <!-- Section pour toutes les autres galeries -->
+        <div id="galleryList" class="gallery-section">
+            <h2>Tout Les Hentai</h2>
+            <div id="allGalleryItems" class="gallery-list"></div>
+        </div>
+    </main>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

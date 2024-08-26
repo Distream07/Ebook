@@ -1,0 +1,189 @@
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121212; /* Arrière-plan sombre */
+    color: #e0e0e0; /* Texte clair */
+    overflow-x: hidden;
+}
+
+/* Styles de la barre de défilement pour les navigateurs WebKit */
+::-webkit-scrollbar {
+    width: 12px; /* Largeur de la barre de défilement */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Couleur de la piste (arrière-plan) */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Couleur du curseur */
+    border-radius: 10px; /* Coins arrondis pour le curseur */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Couleur du curseur au survol */
+}
+
+/* En-tête */
+header {
+    background-color: #1f1f1f; /* Fond sombre pour l'en-tête */
+    color: #e0e0e0; /* Texte clair */
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenu de l'en-tête */
+.header-content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Largeur maximale pour l'en-tête */
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px; /* Hauteur du logo */
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Titre de la page */
+.page-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* Icônes de réseaux sociaux */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #e0e0e0; /* Couleur des icônes */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.social-icons img {
+    height: 34px; /* Hauteur des icônes */
+    width: auto;
+}
+
+/* Conteneur de recherche pour l'index */
+#searchContainer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Champ de recherche */
+#searchInput {
+    padding: 10px;
+    border: 1px solid #333; /* Bordure sombre */
+    border-radius: 4px;
+    width: 250px; /* Largeur ajustée pour une meilleure apparence */
+    font-size: 16px;
+    background-color: #1f1f1f; /* Fond sombre */
+    color: #e0e0e0; /* Texte clair */
+}
+
+/* Bouton de recherche */
+#searchButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3a3a3a; /* Bouton sombre */
+    color: #e0e0e0; /* Texte clair */
+    cursor: pointer; /* Curseur de main pour les boutons cliquables */
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#searchButton:hover {
+    background-color: #4a4a4a; /* Couleur plus claire au survol */
+    transform: scale(1.05); /* Agrandir légèrement au survol */
+}
+
+/* Éléments de la galerie */
+.gallery-item {
+    flex: 1 1 200px; /* Flex-grow: 1, Flex-shrink: 1, Flex-basis: 200px */
+    max-width: 200px; /* Largeur maximale */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: #1e1e1e; /* Bloc sombre */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6); /* Ombre plus marquée */
+    overflow: hidden; /* Pour garder l'image et le titre dans le bloc */
+    text-align: center; /* Centre le texte */
+    cursor: pointer; /* Curseur de main pour les éléments cliquables */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Agrandir légèrement au survol */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.8); /* Ombre plus marquée au survol */
+}
+
+/* Image et titre dans les éléments de la galerie */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Supprimer les marges autour de l'image */
+}
+
+.gallery-item h2 {
+    margin: 10px;
+    font-size: 18px;
+    color: #e0e0e0; /* Texte clair */
+}
+
+/* Liste des eBooks */
+.ebook-list {
+    margin: 20px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.ebook-item {
+    margin: 10px 0;
+    cursor: pointer; /* Curseur de main pour les éléments cliquables */
+}
+
+.ebook-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6); /* Ombre plus marquée */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ebook-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.8); /* Ombre plus marquée au survol */
+}
